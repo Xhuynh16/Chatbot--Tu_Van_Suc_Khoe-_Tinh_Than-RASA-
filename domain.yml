@@ -1,0 +1,182 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - qhg_batdau
+  - qhb_gt
+  - qhb_shy
+  - qhb_cdong
+  - qhb_dautien
+  - qhb_gift
+  - qhb_tuti
+  - qhb_thank
+  - gian_bd
+  - gian_lido
+  - gian_yes
+  - gian_deny
+  - gian_pb
+  - gian_thu
+  - give_name 
+  - lh_batdau
+  - lh_chitiet
+  - lh_hard
+  - lh_camon
+  - bl_batdau
+  - bl_chitiet
+  - bl_hard
+  - bl_camon
+  - ts_mood
+  - ts_speech
+  - speech_men
+  - ts_action
+  - self_deprecation
+  - ts_suggestion
+  - ts_thanks
+  - ts_bye
+
+
+entities:
+  - cust_name
+
+slots:
+  cust_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cust_name
+
+
+responses:
+
+
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn"
+
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+  
+  utter_qhg_batdau:
+    - text: “Những bạn nữ thường thích được quan tâm và chăm sóc. Việc thể hiện sự quan tâm qua những hành động nhỏ như lắng nghe và chia sẻ, gửi tin nhắn nhỏ để hỏi thăm, hoặc tỏ ra quan tâm đến sở thích và mong muốn của họ thường là cách hiệu quả để làm họ thấy ấn tượng về bạn.”
+ 
+  utter_qhb_shy:
+      - text: “Hãy tạo một tâm lý thỏa mái nhé không nên quá đặt nặng nó đâu!Bạn có thể bắt đầu bằng sở thích của đối phương như là về sách truyện mà họ hay đọc hoặc ca sĩ thần tượng của họ hay một cách trực tiếp hơn thì hãy nói ý với họ rằng bạn đang muốn tìm hiểu họ xem xem liệu họ có sẵn sàng ở trong một mối quan hệ mới không?”
+
+  utter_qhb_cdong:
+      - text: “ Bạn có thể bắt đầu như là một lời chào sau đó hãy nói thật lòng mình ra tuy nhiên đừng quá sến sẩm. Hãy cho họ thấy họ là một nhân vật đặc biệt mà bạn đã được gặp. Câu cuối có thể như là “ Liệu cậu có thể cho mình cơ hội được tiếp xúc nhiều hơn với cậu được không” hoặc những câu đại loại như vậy. Hãy nhớ rằng đây là một vấn đề khá nhạy cảm nên hãy chú ý câu từ mà bạn nói ra nhé <3! ”
+    
+  utter_qhb_dautien:
+      - text: “Chúc mừng bạn đã thành công bước đầu tiên theo đuổi cô ấy! Trong Buổi đầu bạn nên ăn mặc lịch sự một chút, tỏ ra soái ca xíu nhé! Hãy chú ý đến mùi cơ thể chút nha, nên chọn mùi nhẹ nhàng. Hãy chú ý đến đến những hành động của họ nó sẽ thể hiện lên một vài thói quen của họ đó! Một cách gây cho họ sự ấn tượng là tặng quà. Món quà không nhất thiết phải đắt tiền đâu ha. Một điều đặc biệt chú ý là hãy đưa cô ấy về đến nhà nhé đảm bảo rằng cô ấy luôn an toàn nhé! <3 ”
+  
+  utter_qhb_gift:
+      - text: "Như tôi đã nói rồi đó! Quà không nhất thiết phải đắt tiền. Nó có thể là 1 bó hoa nhỏ ý nghĩa hơn nếu bạn tự làm, hoặc cái kẹp tóc, Hay là một vật mà cô ấy đang thiếu hoặc một vật có thể giúp cô ấy trong dịp đặc biệt, điều này bạn có thể thấy trong khi quan sát về bạn ấy nhé! Ví dụ như  là Mình thấy cậu có đăng daily là mất ô nên mình tặng cậu cái mới để tránh mưa nắng ha. Tôi đảm bảo với bạn rằng cô ấy sẽ điêu đứng cho coi" 
+  
+  utter_qhb_tuti:
+      - text: Mỗi người đều mang cho mình sự đặc biệt riêng không ai giống ai, bạn có thể kém ở điểm này nhưng hãy nhìn lại xem bạn cũng có nhiều điểm tích cực như mở lòng và muốn mình hoàn thiện trong mắt đối phương còn gì. Hãy là chính bạn thôi, bạn tuyệt vời khi là chính bạn. ”
+    
+  utter_more:
+      - text: “Bạn có cần tôi giúp thêm vấn đề nào không?”
+  
+  utter_chuc1:
+      - text: “Hãy tự tin vào bản thân nhé! Thần Cupid sẽ giúp bạn thui nha!”
+
+  utter_gian_bd:
+      - text: “Hãy bình tĩnh nào! Mọi chuyện sẽ ổn thôi! Bạn có thể tâm sự với tôi để bớt buồn nhé! ”
+
+  utter_gian_lido:
+      - text: “Ultr! Anh ta thật không đúng! Đáng ra anh ấy nên chúc bạn ngủ ngon mới phải!”
+  
+  utter_gian_yes:
+      - text: “Tôi biết anh ấy làm như vậy là chưa đúng! Bạn cũng không nên giận anh ấy quá vì cũng có thể anh ấy quên vì một vài lý do bất khả kháng thôi!”
+  
+  utter_gian_deny:
+      - text: “Nếu bạn đã bực như vậy thì nên nhắn với anh ấy để anh ấy biết rằng bạn đang cảm thấy thế nào! Nếu nén cảm xúc quá lâu sẽ gây ảnh hưởng đến bạn và mối quan hệ này đó! ”
+  
+  utter_gian_pb:
+      - text: “ Bạn nên nói ra cảm xúc của bạn đấy! Họ nhiều khi votri lắm nên sẽ không nhận ra được cảm xúc của bạn đâu, họ cũng chẳng biết bạn giận vì lí do gì đâu nên hãy nói với họ để họ chú ý hơn. Mối quan hệ cũng ngọt ngào hơn!”
+
+  utter_give_name: 
+      - text: “Chào {cust_name}, bạn có gì cần tôi giúp đỡ không nhỉ?
+  
+  utter_lh_batdau: 
+      - text: “Rất tiếc về điều đó. Hãy chia sẻ thêm, tôi sẽ lắng nghe bạn.”
+      - text: “Rất tiếc về tình huống này. Nếu có điều gì bạn muốn chia sẻ, tôi sẽ lắng nghe.”
+  
+  utter_lh_chitiet:
+      - text: “Cuộc ly hôn của bố mẹ tạo áp lực lớn cho bạn. Chia sẻ cảm xúc với người thân hoặc bạn bè có thể giúp giảm áp lực. Bạn đã thảo luận với ai về tình huống của mình chưa?"
+      - text: “Chia sẻ cảm xúc với người thân hoặc bạn bè có thể giúp giảm áp lực từ cuộc ly hôn của bố mẹ. Đã có ai đó hiểu và hỗ trợ bạn chưa?"
+  
+  utter_lh_hard: 
+      - text: “Chia sẻ với người thân và bạn bè mang lại hiểu biết và hỗ trợ. Kết hợp hoạt động giảm stress như thiền, tập thể dục, hoặc duy trì lịch trình ổn định giúp giảm áp lực và tăng tích cực tinh thần nhé bạn."
+      - text: “Chia sẻ với người thân và bạn bè mang lại sự hiểu biết và hỗ trợ đáng kể. Kết hợp hoạt động giảm stress giúp giảm áp lực và tăng tích cực tinh thần nhé bạn."
+  
+  utter_camon:
+      - text: “Hãy nhớ rằng bạn không phải đối mặt với mọi thứ một mình. Nếu bạn cần thêm sự hỗ trợ, tôi ở đây để giúp đỡ."
+      - text: “Đừng ngần ngại khi cần sự giúp đỡ. Tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn nếu có bất kỳ điều gì cần."
+
+  utter_greet:
+      - text: "Xin chào."
+      - text: "Xin chào. Tôi có thể giúp gì cho bạn?"
+      - text: "Chào bạn. Bạn cần tôi giúp gì không?" 
+      - text: "Xin chào! Rất vui vì bạn ở đây hôm nay!" 
+      - text: "Xin chào! Bạn cần gì sao?"
+      - text: "Tất nhiên rồi! Tôi luôn sẵn lòng lắng nghe bạn."
+      - text: "Tôi luôn lắng nghe bạn mọi lúc"
+      - text: "Bạn yêu quý! Tôi luôn ở đây để lắng nghe bạn"
+      - text: "Bạn muốn nói điều gì với tôi?"
+
+
+  
+  utter_ts_mood:
+      - text: “Tôi rất tiếc khi nghe bạn nói vậy. Bạn có thể chia sẻ với tôi vì sao bạn lại cảm thấy tệ lắm không? Tôi luôn sẵn sàng lắng nghe và giúp đỡ bạn.”
+      - text: “Có lẽ bạn đang trải qua khoảng thời gian khó khăn. Bạn có muốn nói với tôi điều gì khiến bạn buồn không? Tôi có thể đưa ra một số lời khuyên hữu ích hoặc chỉ là một người bạn để bạn có thể tâm sự.”
+      - text: “Ôi không! Bạn yêu quý của tôi. Tôi rất tiếc khi nghe điều đó. Bạn có thể chia sẻ với tôi điều gì khiến tâm trạng bạn không tốt không.”
+      - text: “Thật lấy làm tiếc khi nghe điều đó. Bạn có thể chia sẻ với tôi điều gì làm bạn buồn được không.”
+      - text: “Có chuyện gì xảy ra với bạn? Bạn có muốn chia sẻ nó với tôi không?”
+  
+  utter_ts_speech:
+      - text: “Tôi đồng cảm với bạn. Những lời nói đó thật tiêu cực và sai trái, họ không nên làm thế với bạn và bất cứ ai. Bạn yêu quý, người sai là họ, bạn đừng vì lỗi sai của người khác mà khiến bản thân mình buồn nhé. Vui vẻ lên vì tôi luôn ở đây sẵn sàng làm bạn và lắng nghe tâm trạng của bạn.”
+      - text: “Ôi, chắc hẳn những lời nói đó đã làm bạn tổn thương. Họ thật thô lỗ khi đã nói bạn như vậy. Nhưng dù thế nào đó cũng là những lời nói sai trái và không đúng sự thật. Bởi đối với tôi và những người thân yêu của bạn, bạn luôn là người đẹp nhất. Vì vậy đừng buồn nữa nhé!”
+      - text: “Tôi lấy làm tiếc vì những gì bạn phải chịu đựng. Những lời nói đó thạt phản cảm và sai trái. Bởi vì đối với tôi và những người yêu quý bạn mà nói thì bạn thật tuyệt vời làm sao. Và khi nói ra những lời này, xét từ một góc độ nào đó họ đã “xấu xí” hơn bạn rồi. Vậy nên vui lên nhé, bạn thân mến!”
+      - text: “Tôi rất đồng cảm với bạn. Bất kể ai khi nghe những lời nói như vậy về mình cũng sẽ tổn thương. Nhưng bạn đừng buồn nhé vì khi buồn nhìn rất mất sức sống, nó làm cho nhan sắc của ta giảm đi một bậc đó.”
+  
+  utter_speech_men: 
+      - text: “Tôi rất buồn vì bạn phải trải qua điều này. Bản thân bạn không có gì sai cả, họ không nên dùng những lời lẽ như thế để nói về bạn. Mỗi người có cá tính, đặc điểm và sở thích riêng của mình điều đó là bình thường và không ai có quyền được phán xét bạn. Tôi luôn ở đây và ủng hộ bạn, vì vậy hãy tự tin về bản thân mình lên nhé.”
+  
+  utter_ts_action:
+      - text: "Tôi rất tiếc khi nghe bạn đang phải trải qua tình huống khó khăn như vậy. Đó là những hành vi sai trái và không thể chấp nhận được. Bạn cần ngăn nó lại và tôi muốn nói rằng bạn không cô đơn. Dưới đây là một số bước bạn có thể thực hiện để bảo vệ bản thân mk Đừng trả đũa Thường thì trả đũa chỉ làm cho tình hình trở nên tồi tệ hơn. Thay vào đó, hãy giữ bình tĩnh và tránh tiếp xúc với những người làm phiền bạn. Nói với người trưởng thành. Nếu họ vẫn tiếp tục làm phiền bạn, hãy chia sẻ với một người trưởng thành như phụ huynh, giáo viên hoặc người giám hộ về những gì đang xảy ra. Họ có thể cung cấp sự hỗ trợ và giúp bạn đối phó với tình huống này. Đồng thời tìm sự hỗ trợ từ bạn bè Nếu có thể, hãy nói chuyện với bạn bè tin cậy và nhận sự hỗ trợ từ họ. Họ có thể cung cấp sự ủng hộ cũng như giúp bạn tìm cách xử lý tình huống. Hãy tập trung vào sức khỏe tinh thần của bạn Dành thời gian để làm những điều mà bạn thích và mang lại niềm vui cho bản thân. Điều này có thể là hoạt động thể chất, nghệ thuật, âm nhạc hoặc bất cứ điều gì làm bạn cảm thấy thoải mái và hạnh phúc. Nếu cần, tìm sự giúp đỡ từ chuyên gia / Nếu cảm thấy tình huống quá khó khăn và không thể tự xử lý, hãy tìm kiếm sự giúp đỡ từ một chuyên gia tâm lý hoặc tư vấn viên. Họ có kinh nghiệm và kiến thức để hỗ trợ bạn vượt qua những thách thức này."
+  
+  utter_self_deprecation:
+      - text: “Tôi hiểu cảm giác đó của bạn. Không ai sinh ra đã hoàn hảo, đôi khi chúng ta nhìn vào khuyết điểm mà lại quên đi ưu điểm của mình. Mỗi người đều có nét đặc biệt và giá trị của riêng mình. Hơn nữa bất kể là ai đều xứng đáng được yêu thương chứ không nhất định phải là người có ngoại hình hoàn hảo hay gương mặt đẹp. Vì vậy hãy yêu thương bản thân mình hơn bạn nhé.”
+  
+  utter_ts_suggestion:
+      - text: “Tôi rất đồng cảm với bạn. Có lẽ bây giờ tinh thần của bạn đang không được tốt lắm. Một số cách có thể khiến tâm trạng của bạn tốt lên  bạn hãy tích cực giao tiếp với những người xung quanh mình, nó có thể giúp bạn giải phóng những thứ tiêu cực và khiến cho đầu óc bạn được thư giãn. Tham gia vào hoạt động thể thao có thể khiến bạn quên đi những buồn phiền và còn giúp bạn có một cơ thể khỏe mạnh nữa. Giành thời gian cho sở thích cá nhân của bạn, ai làm điều mình thích thì đều vui mà đúng không. Đó là một số gợi ý của tôi để giúp bạn tốt hơn. Chúc bạn nhiều điều tốt lành nhé.”
+  
+  utter_ts_thanks:
+      - text: “Rất vui vì đã giúp đỡ được bạn. Nếu bạn cần giúp đỡ có thể gọi tôi bất cứ lúc nào.”
+      - text: “Không có gì giúp được bạn tôi rất vui. Chúc bạn một ngày tốt lành nhé.”
+      - text: “Không có gì. Nếu có việc gì cần bạn có thể noí với tôi. Tôi luôn sẵn lòng.”
+  
+  utter_ts_bye:
+      - text: “Tạm biệt”
+      - text: “Good bye”
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

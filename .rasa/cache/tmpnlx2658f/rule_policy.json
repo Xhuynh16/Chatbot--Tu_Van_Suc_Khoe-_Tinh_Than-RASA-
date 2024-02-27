@@ -1,0 +1,18 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ap_luc_hoc_tap\"}}]": "utter_tam_su_ap_luc_hoc_tap",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ap_luc_hoc_tap\"}}, {\"prev_action\": {\"action_name\": \"utter_tam_su_ap_luc_hoc_tap\"}, \"user\": {\"intent\": \"ap_luc_hoc_tap\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"chao_hoi\"}}]": "utter_chao_hoi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"chao_hoi\"}}, {\"prev_action\": {\"action_name\": \"utter_chao_hoi\"}, \"user\": {\"intent\": \"chao_hoi\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back"
+    ]
+  }
+}

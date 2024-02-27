@@ -1,0 +1,313 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - Chào bạn
+    - Xin chào
+    - Hi
+    - Chào bạn, có gì mới?
+    - Xin chào mọi người
+    - Hello
+    - Chào cậu
+    - Chào bạn, bạn khỏe không?
+    - Hey
+    - Xin chào tất cả
+    - Alo
+    - Gì mới?
+    - Chào anh/chị
+    - Xin chào các bạn
+    - Chào nhé
+    - Chào bạn, có gì hot?
+    - Chào bạn, bạn đã ổn chưa?
+    - Xin chào tình yêu
+    - Chào mừng bạn đến với ứng dụng của chúng tôi
+    - Hi there
+    - Chào hỏi
+
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: greet
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: qhg_batdau
+  examples: |
+    - Bây giờ, mình đang thích một bạn nữ làm sao để tiếp cận bạn ấy được?
+    - hiện tại, mình thích một bạn nữ  làm sao để tiếp cận bạn đó?
+    - Cách tiếp cận một bạn nữ?
+    - Mình đang quan tâm đến một bạn nữ, làm thế nào để giao tiếp với họ?
+    - Làm thế nào để chủ động tiếp cận bạn nữ mình thích bây giờ?
+
+
+- intent: qhb_shy
+  examples: |
+    - Tôi rất ngại khi bắt chuyện với họ, phải làm sao?
+    - Mình rất ngại khi bắt chuyện với họ, phải làm sao?
+    - Em ngại khi bắt chuyện với họ, phải làm sao?
+    - Tôi không biết cách bắt chuyện như nào?
+    - Phải làm sao để bắt chuyện với họ bây giờ?
+    - Bắt chuyện như nào?
+    - Chủ động nhắn tin như nào?
+    - Nên nhắn gì đầu tiên?
+
+- intent: qhb_cdong
+  examples: |
+    - Nên chủ động như nào?
+    - Chủ động bày tỏ như nào?
+    - Bày tỏ như nào?
+    - Mình nên nói như nào để đối phương không cảm thấy đột ngột nhỉ?
+
+- intent: qhb_dautien
+  examples: |
+    - Một vấn đề nữa, tôi nên làm gì cho buổi gặp đầu tiên?
+    - Buổi hẹn đầu tiên nên làm gì?
+    - làm trong buổi đầu gặp mặt?
+    - Gây ấn tượng trong buổi hẹn đầu tiên như nào?
+
+- intent: qhb_gift
+  examples: |
+    - Quà gì được?
+    - Quà gì?
+    - Quà như nào?
+    - Quà?
+    - Mua gì cho bạn ấy được?
+    - Tôi đâu biết cô ấy muốn gì mà mua?
+    - Nên mua cái gì cho hợp lý được?
+    - Mua gì được nhỉ?
+
+- intent: qhb_tuti
+  examples: |
+    - Nhưng tôi không tự tin về bản thân!
+    - Tôi xấu lắm!
+    - Tôi tự ti lắm!
+    - Tôi sợ cô ấy chê tôi!
+    - bản thân tôi không đẹp trai!
+    - nhưng mà tôi không đẹp trai!
+
+- intent: qhb_thank
+  examples: |
+    - Được rồi!
+    - oke
+    - cảm ơn
+    - thank
+    - thankiu
+
+
+- intent: gian_bd
+  examples: |
+    - Người yêu của tôi không thương tôi?
+    - Tôi đang cãi nhau với người yêu?
+    - Tôi với bạn ấy không hợp nhau?
+    - Chúng tôi không hợp nhau?
+    - Anh ấy mắng tôi.
+    - Tôi rất bực anh ấy!
+
+- intent: gian_lido
+  examples: |
+    - Anh ấy không chúc tôi ngủ ngon!
+    - anh ta đi ngủ trước tôi
+    - Hôm nay không chúc tôi ngủ ngon 
+    - Anh ta để tôi một mình và đi ngủ trước!
+    - Tôi bảo đi ngủ mà anh ấy không chúc tôi ngủ ngon 
+
+- intent: gian_yes
+  examples: |
+    - đúng….
+    - bạn nói đúng đấy
+    - yess
+    - chính xác
+    - chuẩn không cần chỉnh
+    - đúng luôn
+    - k sai
+- intent: gian_deny
+  examples: |
+    - tôi không chấp nhập lý do nào hết!
+    - Tôi không chấp nhận!
+    - Tôi không quan tâm!
+    - Không nên như vậy!
+    - không!
+
+
+- intent: gian_pb
+  examples: |
+    - Anh ta phải tự nhận ra được điều này chứ!
+    - Tôi không muốn phải nói ra!
+    - Anh ấy phải biết điều đó chứ!
+    - Tôi không muốn nói!
+
+- intent: gian_thu
+  examples: |
+    - Tôi sẽ thử xem sao!
+    - Tôi sẽ thử 
+    - oke
+
+- intent: give_name
+  examples: |
+    - Chào bạn, tôi tên là [Thắng](cust_name) 
+    - Chào bạn, tôi tên là [Huynh](cust_name)
+    - Chào bạn, tôi tên là [Hoa](cust_name)
+    - Chào bạn, tôi tên là [Hiên](cust_name)
+    - Chào bạn, tôi tên là [Huyền](cust_name)
+
+- intent: phat_hien_cam_xuc
+  examples: |
+    - Tôi đang cảm thấy [vui vẻ](cam_xuc) hôm nay.
+    - Mình đang trải qua [căng thẳng](trieu_chung) nặng.
+    - Hôm nay tôi rất [buồn bã](cam_xuc) vì [vấn đề tình cảm](trieu_chung).
+    - Tôi đang cảm thấy [lo lắng](cam_xuc) khi phải [nói trước đám đông](trieu_chung).
+    - Mình đang trải qua [uất ức](cam_xuc) và [mất ngủ](trieu_chung).
+    - Cảm giác [sợ hãi](cam_xuc) với [áp lực công việc](trieu_chung) đang đè nặng lên mình.
+    - [Tức giận](cam_xuc) bắt đầu áp đảo mỗi khi tôi đối mặt với [tình huống khó khăn](trieu_chung).
+    - Tôi đang cảm thấy [kinh tởm](cam_xuc) với [sự kiện trong cuộc sống](trieu_chung).
+    - Mình đang cố gắng vượt qua cảm giác [mệt mỏi](trieu_chung) và [cô đơn](trieu_chung).
+    - Tôi muốn nói chuyện về cảm xúc [vui vẻ](cam_xuc) của mình và cách [quản lý căng thẳng](trieu_chung).
+
+- intent: lh_batdau
+  examples: |
+    - Tôi cảm thấy stress và căng thẳng
+    - Tôi cảm thấy buồn và áp lực cuộc sống
+    - Tôi cảm thấy chán nản và áp lực
+
+
+
+- intent: lh_chitiet
+  examples: |
+    - Sau khi bố mẹ tôi ly hôn, tôi thường xuyên cảm thấy căng thẳng và áp lực.
+    - Tôi thường xuyên bị áp đặt bởi cảm giác căng thẳng và áp lực, đặc biệt là sau cuộc ly hôn của bố mẹ.
+    - Sự chia rẽ giữa bố mẹ tôi đã tạo ra một không khí căng thẳng và áp lực, làm cho cuộc sống hàng ngày của tôi trở nên khó khăn hơn.
+    - Cảm giác căng thẳng và áp lực ngày càng trở nên phổ biến trong cuộc sống của tôi, điều này chủ yếu xuất phát từ sự thay đổi lớn sau cuộc ly hôn của bố mẹ.
+
+
+- intent: lh_hard
+  examples: |
+    - Chưa
+    - Tôi chưa
+    - Thực sự, tôi cảm thấy khó chia sẻ với người khác về vấn đề của mình. Cảm giác như tôi sẽ gây phiền phức cho họ.
+    - Tôi ngại
+    - Tôi nghĩ họ sẽ không lắng nghe tôi
+
+
+- intent: lh_camon
+  examples: |
+    - Tôi cảm ơn
+    - Ý kiến đó cũng có vẻ hay. Tôi sẽ cân nhắc thử.
+    - Ý kiến hay đó
+    - Ổn đấy
+    - Oke
+    - Hay đó
+    - Nhất trí
+    - Cảm ơn nha
+    - Ui hay quá
+    - Rất tốt
+  
+- intent: ts_mood
+  examples: |
+    - Tôi đang cảm thấy rất buồn!
+    - Tôi đang thấy tệ lắm.
+    - Tâm trạng của tôi không được tốt lắm 
+    - Tôi buồn quá huhu
+    - Cảm giác của tôi đang rất tệ
+    - Mấy hôm nay tôi buồn nhiều lắm. Tôi muốn khóc.
+
+- intent: speech_men
+  examples: |
+    - Mọi người chê tôi là con trai mà ẻo lả như con gái. Tôi thật sự cũng không muốn như vậy. Tôi thấy rất buồn khi nghe những lời nói đó.
+    - Tôi là con trai nhưng tôi thích mặc những bộ quần áo có màu đỏ, hồng,.. Nó có chút sặc sỡ nên tôi bị mọi người chê cười là “Con trai mà mặc màu hồng như con gái” họ còn nói tôi là “Thằng ái”. Nhưng tôi không ái, đấy là sở thích của tôi thì có gì sai chứ. 
+    - Tôi là con trai nhưng tôi thích trang điểm. Tôi thấy trang điểm khiến tôi trở nên đẹp hơn. Nhưng họ nói chỉ có con gái mới trang điểm. Người ta nhìn tôi với ánh mắt cười cợt và nói tôi bê đê khi thấy tôi trang điểm.
+
+- intent: ts_action
+  examples: |
+    - Họ không những chê bai tôi mà còn dùng hình ảnh tôi chế video đăng lên Facebook, Tiktok với những lời lẽ xúc phạm. Tôi cảm thấy mình bị cô lập.
+    - Họ nói sau lưng tôi rất nhiều, luôn lặp lại những từ ngữ xấu xí đó để chế nhạo tôi thậm chí lập nhóm để nói xấu tôi. Không ai nói chuyện với tôi cả, tôi cảm thấy mình bị cô lập.
+    - Không những chế nhạo tôi xấu mà còn bắt nạt dọa đánh tôi. Tôi rất buồn và sợ hãi.
+
+- intent: self_deprecation
+  examples: |
+    - Tôi cảm thấy bản thân mình thật xấu xí, da nhiều mụn lại đen, môi quá dày mắt một mí, tôi thậm chí không thích nhìn thấy mình ở trong gương. Ngoài kia ai ai cũng xinh đẹp, nhìn học thật tự tin và có nhiều năng lượng. Còn tôi chả có gì cả tôi rất tự ti và ngại tiếp xúc với người khác. Thật ngưỡng mộ những người có vẻ ngoài xinh đẹp.
+    - Tôi luôn cảm thấy bản thân xấu xí và tự ti. Tôi không thích cơ thể của mình, vì tôi thấy mình quá cao, lại gầy nữa. Tôi không có gì đặc biệt hay nổi bật, tôi chỉ là một người bình thường, không có tài năng hay sở thích gì. Tôi cảm thấy mình không có giá trị gì, và chẳng có ai quan tâm đến tôi cả.
+    - Tôi luôn so sánh mình với những người khác, và tôi thấy mình thua kém họ ở mọi mặt. Tôi thấy bạn bè của tôi đều đẹp trai, xinh gái lại thông minh, tài năng, và có nhiều người yêu thương. Còn tôi thì xấu xí và chẳng có gì nổi bật.
+    - Tôi cảm thấy bản thân mình thật xấu xí, cũng không có điểm nào nổi trội. Vì thế nên không có ai muốn chơi với tôi cả.
+
+- intent: ts_suggestion
+  examples: |
+    - Những lời họ nói làm tôi rất buồn và chán nản, tôi không muốn tiếp xúc với ai nữa cả.
+    - Cảm giác buồn và chán nản ngày càng trở nên nặng nề khi tôi phải đối mặt với những lời chỉ trích và chê bai không ngừng từ xung quanh. Tôi phải làm sao đây?
+    - Việc tôi phải chịu đựng những lời nói đó làm cho tôi mệt mỏi, tâm trạng của tôi tồi tệ theo từng ngày.
+    - Tôi cảm thấy tổn thương vì những lời nói khó nghe đó, nó khiến tôi cảm thấy rất tự ti và muốn tránh xa mọi

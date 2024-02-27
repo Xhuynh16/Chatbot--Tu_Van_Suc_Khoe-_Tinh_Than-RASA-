@@ -1,0 +1,143 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: qh_tuvan
+  steps:
+  - intent: qhg_batdau
+  - action: utter_qhg_batdau
+  - intent: qhb_shy
+  - action: utter_qhb_shy
+  - intent: qhb_cdong
+  - action: utter_qhb_cdong
+  - intent: qhb_dautien
+  - action: utter_qhb_dautien
+  - intent: qhb_gift
+  - action: utter_qhb_gift
+  - intent: qhb_tuti
+  - action: utter_qhb_tuti
+  - intent: qhb_thank
+  - action: utter_more
+  - intent: deny
+  - action: utter_chuc1
+
+  
+- story: gian_doi
+  steps:
+  - intent: gian_bd
+  - action: utter_gian_bd
+  - intent: gian_lido
+  - action: utter_gian_lido
+  - intent: gian_yes
+  - action: utter_gian_yes
+  - intent: gian_deny
+  - action: utter_gian_deny
+  - intent: gian_pb
+  - action: utter_gian_pb
+  - intent: gian_thu
+  - action: utter_qhb_gift
+  - intent: qhb_tuti
+  - action: utter_qhb_tuti
+  - action: utter_more
+  - intent: deny
+  - action: utter_chuc1
+
+- story: name
+  steps:
+  - intent: give_name
+  - action: utter_give_name
+
+- story: lh_story_1
+  steps:
+  - intent: lh_batdau
+  - action: utter_lh_batdau
+
+- story: lh_story_2
+  steps:
+  - intent: lh_chitiet
+  - action: utter_lh_chitiet
+
+- story: lh_story_3
+  steps:
+  - intent: lh_hard
+  - action: utter_lh_hard
+
+- story: lh_story_4
+  steps:
+  - intent: lh_camon
+  - action: utter_camon
+
+- story: body_shaming
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ts_mood
+  - action: utter_ts_mood
+  - intent: ts_speech
+  - action: utter_ts_speech
+  - intent: self_deprecation
+  - action: utter_self_deprecation
+  - intent: ts_suggestion
+  - action: utter_ts_suggestion
+  - intent: ts_thanks
+  - action: utter_ts_thanks
+  - intent: ts_bye
+  - action: utter_ts_bye
+
+- story: hoan_chinh
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ts_speech
+  - action: utter_ts_speech
+  - intent: self_deprecation
+  - action: utter_self_deprecation
+  - intent: ts_suggestion
+  - action: utter_ts_suggestion
+  - intent: lh_batdau
+  - action: utter_lh_batdau
+  - intent: lh_chitiet
+  - action: utter_lh_chitiet
+  - intent: lh_hard
+  - action: utter_lh_hard
+  - intent: qhg_batdau
+  - action: utter_qhg_batdau
+  - intent: qhb_shy
+  - action: utter_qhb_shy
+  - intent: qhb_cdong
+  - action: utter_qhb_cdong
+  - intent: ts_thanks
+  - action: utter_ts_thanks
+  - intent: ts_bye
+  - action: utter_ts_bye
+
+
+
+

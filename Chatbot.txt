@@ -1,0 +1,4 @@
+note: 	- Bỏ chương 4 thay bằng Kết luận (phần này không đánh số) trong phần kết luận này bao gồm Các vấn đề mà nhóm nghiên cứu đã làm được và định hướng phát triển.
+	- Giản lược bớt về phần cơ sở lý thuyết
+	- Bổ sung tổng quát quy trình hoạt động của chatbot.
+	- Chạy đánh giá thử nghiệm (confusion matrix)
